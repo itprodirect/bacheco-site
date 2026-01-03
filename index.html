@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50' font-size='48'%3E%F0%9F%AA%99%3C/text%3E%3C/svg%3E">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Bache & Co. — BU Morgan & Peace Dollars</title>
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -13,9 +12,12 @@
   <main class="container">
     <div class="grid cols2">
       <section class="card">
-        <div class="kicker">Simple. Transparent. Low-fraud.</div>
+        <div class="kicker">Collector-friendly. Dispute-resistant. Transparent.</div>
         <h1>Raw BU Morgan &amp; Peace silver dollars — priced with a clear formula.</h1>
-        <p>v1 goal: clean site, strong trust signals, and a low-dispute ordering flow.</p>
+        <p>
+          v0 is intentionally simple: a small catalog, transparent pricing tied to spot silver, and a reservation-style
+          order flow designed to minimize fraud and disputes.
+        </p>
 
         <div class="btnrow">
           <a class="btn primary" href="/pages/shop.html">Shop</a>
@@ -23,35 +25,45 @@
         </div>
 
         <hr />
+
         <div class="grid cols3">
           <div class="card">
-            <h2>Authenticity</h2>
-            <p>Raw BU (no numeric grade guarantee). Photos representative.</p>
+            <h2>What you get</h2>
+            <p>Raw BU “Our Choice” coins from our BU inventory. Dates/mints vary.</p>
           </div>
           <div class="card">
-            <h2>Shipping</h2>
-            <p>Insured + tracking options (details coming).</p>
+            <h2>Payment</h2>
+            <p><b>Wire/ACH only</b> (v0). Low dispute risk, clean transactions.</p>
           </div>
           <div class="card">
-            <h2>Clean terms</h2>
-            <p>Clear rules to reduce disputes and chargebacks.</p>
+            <h2>Reservation flow</h2>
+            <p>Submit → confirm totals + window → pay → ship w/ tracking.</p>
           </div>
+        </div>
+
+        <div class="notice small" style="margin-top:12px;">
+          <b>BU disclaimer:</b> Raw BU may show typical bag marks/contact marks and natural toning variation.
+          No numeric grade guarantee unless explicitly stated.
         </div>
       </section>
 
       <aside class="card">
-        <h2>Silver spot (stub)</h2>
+        <h2>Silver spot (v0)</h2>
         <div class="badge">Spot: <b id="spotPrice">$--</b></div>
         <p id="spotStatus"></p>
 
         <hr />
-        <div class="notice">
-          v1 is a skeleton. Next session: live spot feed + CloudFront hardening.
-        </div>
 
+        <h2>Start here</h2>
         <div class="btnrow">
           <a class="btn" href="/pages/product-morgan-bu.html">Morgan BU</a>
           <a class="btn" href="/pages/product-peace-bu.html">Peace BU</a>
+          <a class="btn" href="/pages/order.html">Reserve</a>
+        </div>
+
+        <hr />
+        <div class="notice small">
+          Next: HTTPS via CloudFront, private S3 (OAC), live spot feed proxy.
         </div>
       </aside>
     </div>

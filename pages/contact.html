@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Bache & Co.</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="card">
+      <div class="kicker">Contact</div>
+      <h1>Get in touch</h1>
+      <p>
+        v0 is reservation-based. If you’re placing a larger order or want a quote for specific dates/mints,
+        reach out and we’ll respond quickly.
+      </p>
+
+      <hr />
+
+      <h2>Response time</h2>
+      <p class="small">
+        Typical response within <b>1 business day</b>. For urgent order issues, include “URGENT” in the subject/message.
+      </p>
+
+      <hr />
+
+      <h2>Email (v0 placeholder)</h2>
+      <p class="small">
+        Use this for now (update when ready): <b>orders@bacheco.example</b>
+      </p>
+
+      <div class="notice small">
+        Replace the email above with your real business inbox when you’re ready (e.g., orders@bacheco.com).
+      </div>
+
+      <hr />
+
+      <h2>Message (demo)</h2>
+      <form id="contactForm">
+        <label>Name</label>
+        <input class="input" required />
+
+        <label>Email</label>
+        <input class="input" type="email" required />
+
+        <label>Message</label>
+        <textarea class="input" rows="6" required placeholder="Tell us what you need (quantity, questions, date/mint requests, etc.)"></textarea>
+
+        <div class="btnrow" style="margin-top:12px;">
+          <button class="btn primary" type="submit">Send (demo)</button>
+          <a class="btn" href="/pages/shop.html">Shop</a>
+        </div>
+      </form>
+
+      <div id="contactMsg" class="small" style="margin-top:12px;"></div>
+
+      <hr />
+
+      <h2>What to include for quotes</h2>
+      <ul class="small">
+        <li>Coin type (Morgan or Peace)</li>
+        <li>Quantity</li>
+        <li>Any date/mint preferences</li>
+        <li>Your shipping state (helps with policy/tax planning)</li>
+      </ul>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const f = document.getElementById("contactForm");
+      const m = document.getElementById("contactMsg");
+      if (!f) return;
+      f.addEventListener("submit", (e) => {
+        e.preventDefault();
+        m.textContent = "Message submitted (demo). Next step: wire this to email delivery (SES) or a secure form provider.";
+        f.reset();
+      });
+    });
+  </script>
+</body>
+</html>

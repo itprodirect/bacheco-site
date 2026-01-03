@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Peace BU — Bache & Co.</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="card" data-sku="peace_bu">
+      <div class="kicker">Peace Silver Dollar (Raw BU, Our Choice)</div>
+      <h1>Peace Silver Dollar (BU, raw)</h1>
+      <p class="small">
+        You receive one raw BU Peace dollar selected from our BU inventory. Dates/mints vary.
+      </p>
+
+      <div class="notice small">
+        <b>BU disclaimer:</b> Raw BU coins commonly show bag/contact marks and natural toning variation.
+        No numeric grade guarantee unless explicitly stated.
+      </div>
+
+      <hr />
+
+      <h2>Pricing (formula)</h2>
+      <p class="small">Spot × 0.77344 oz + premium (premium drops with higher quantities).</p>
+
+      <label for="qty">Quantity</label>
+      <input id="qty" class="input" type="number" min="1" value="1" />
+
+      <div style="margin-top:12px;" class="grid cols3">
+        <div class="card"><h2>Melt</h2><p><b id="melt">$--</b></p></div>
+        <div class="card"><h2>Premium</h2><p><b id="premium">$--</b></p></div>
+        <div class="card"><h2>Unit</h2><p><b id="unitPrice">$--</b></p></div>
+      </div>
+
+      <div class="badge" style="margin-top:12px;">Total: <b id="totalPrice">$--</b></div>
+
+      <hr />
+
+      <h2>Ordering (v0)</h2>
+      <p class="small">
+        Reservation-style order flow: submit → confirm totals + payment window → <b>wire/ACH only</b> → ship with tracking.
+      </p>
+
+      <div class="btnrow">
+        <a class="btn primary" href="/pages/order.html">Reserve / Place order</a>
+        <a class="btn" href="/pages/pricing.html">Pricing details</a>
+        <a class="btn" href="/pages/shop.html">Back to shop</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/pricing.js"></script>
+</body>
+</html>
