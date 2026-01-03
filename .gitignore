@@ -3,3 +3,7 @@ Thumbs.db
 *.log
 .vscode/
 deploy/
+
+# local aws helpers
+bucket-policy.json
+website.json
