@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Morgan BU — Bache & Co.</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="card" data-sku="morgan_bu">
+      <div class="kicker">Raw BU (no numeric grade guarantee)</div>
+      <h1>Morgan Silver Dollar (BU, raw)</h1>
+      <p>Photos are representative. Expect normal bag marks/toning variation.</p>
+
+      <div class="notice">
+        Pricing: Spot × 0.77344 oz + premium (tiered by quantity).
+      </div>
+
+      <label for="qty">Quantity</label>
+      <input id="qty" class="input" type="number" min="1" value="1" />
+
+      <hr />
+      <div class="grid cols3">
+        <div class="card"><h2>Melt</h2><p><b id="melt">$--</b></p></div>
+        <div class="card"><h2>Premium</h2><p><b id="premium">$--</b></p></div>
+        <div class="card"><h2>Unit</h2><p><b id="unitPrice">$--</b></p></div>
+      </div>
+
+      <div class="badge" style="margin-top:12px;">Total: <b id="totalPrice">$--</b></div>
+
+      <div class="btnrow">
+        <a class="btn primary" href="/pages/order.html">Reserve / Place order</a>
+        <a class="btn" href="/pages/pricing.html">Pricing details</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/pricing.js"></script>
+</body>
+</html>

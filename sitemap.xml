@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://localhost:5500/index.html</loc></url>
+  <url><loc>http://localhost:5500/pages/shop.html</loc></url>
+  <url><loc>http://localhost:5500/pages/product-morgan-bu.html</loc></url>
+  <url><loc>http://localhost:5500/pages/product-peace-bu.html</loc></url>
+  <url><loc>http://localhost:5500/pages/pricing.html</loc></url>
+  <url><loc>http://localhost:5500/pages/about.html</loc></url>
+  <url><loc>http://localhost:5500/pages/order.html</loc></url>
+  <url><loc>http://localhost:5500/pages/faq.html</loc></url>
+  <url><loc>http://localhost:5500/pages/terms.html</loc></url>
+  <url><loc>http://localhost:5500/pages/privacy.html</loc></url>
+  <url><loc>http://localhost:5500/pages/contact.html</loc></url>
+</urlset>
