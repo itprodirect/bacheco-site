@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pricing — Bache & Co.</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="card">
+      <div class="kicker">Transparent pricing</div>
+      <h1>Pricing formula (v0)</h1>
+      <p>
+        We price using a simple, explainable formula:
+        <b>Silver Spot × 0.77344 oz</b> (silver content per $1) <b>+ premium</b> (BU condition, handling, ops, and fulfillment).
+      </p>
+
+      <div class="badge">Spot (stub): <b id="spotPrice">$--</b></div>
+      <p id="spotStatus"></p>
+
+      <hr />
+
+      <h2>Premium tiers (v0)</h2>
+      <p>Premiums drop as quantity increases.</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Qty</th>
+            <th>Morgan BU premium</th>
+            <th>Peace BU premium</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1–9</td><td>$48.00</td><td>$44.00</td></tr>
+          <tr><td>10–24</td><td>$46.00</td><td>$42.00</td></tr>
+          <tr><td>25–49</td><td>$44.00</td><td>$40.00</td></tr>
+          <tr><td>50+</td><td>$42.00</td><td>$38.00</td></tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <h2>What “Our Choice” means</h2>
+      <p>
+        You receive a raw BU Morgan/Peace dollar selected from our BU inventory.
+        Dates/mints vary. If you want specific dates/mints, we can quote separately.
+      </p>
+
+      <div class="notice">
+        <b>BU disclaimer:</b> Raw BU coins may show typical bag marks, contact marks, and natural toning variation.
+        We do not guarantee a numeric grade unless explicitly stated.
+      </div>
+
+      <hr />
+
+      <h2>Live spot sources (next)</h2>
+      <p>
+        Next session: live spot display and source labels (Kitco / COMEX / LBMA) via a serverless proxy
+        (avoids CORS + rate limits) and CloudFront (HTTPS).
+      </p>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/pricing.js"></script>
+</body>
+</html>

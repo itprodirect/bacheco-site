@@ -4,22 +4,22 @@
   "products": [
     {
       "id": "morgan_bu",
-      "name": "Morgan Silver Dollar (BU, raw)",
+      "name": "Morgan Silver Dollar (BU, raw — Our Choice)",
       "premiums": [
-        { "minQty": 1,  "premium": 12.00 },
-        { "minQty": 10, "premium": 10.00 },
-        { "minQty": 25, "premium": 9.00 },
-        { "minQty": 50, "premium": 8.50 }
+        { "minQty": 1,  "premium": 48.00 },
+        { "minQty": 10, "premium": 46.00 },
+        { "minQty": 25, "premium": 44.00 },
+        { "minQty": 50, "premium": 42.00 }
       ]
     },
     {
       "id": "peace_bu",
-      "name": "Peace Silver Dollar (BU, raw)",
+      "name": "Peace Silver Dollar (BU, raw — Our Choice)",
       "premiums": [
-        { "minQty": 1,  "premium": 11.00 },
-        { "minQty": 10, "premium": 9.50 },
-        { "minQty": 25, "premium": 8.75 },
-        { "minQty": 50, "premium": 8.25 }
+        { "minQty": 1,  "premium": 44.00 },
+        { "minQty": 10, "premium": 42.00 },
+        { "minQty": 25, "premium": 40.00 },
+        { "minQty": 50, "premium": 38.00 }
       ]
     }
   ]

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reserve / Order — Bache & Co.</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="container">
+    <section class="card">
+      <div class="kicker">Reservation (v0)</div>
+      <h1>Reserve your order</h1>
+      <p>
+        v0 uses a reservation step to confirm totals and prevent fraud/chargebacks.
+        Submitting this form does <b>not</b> charge you. We confirm pricing + payment instructions next.
+      </p>
+
+      <hr />
+
+      <h2>How it works</h2>
+      <ol class="small">
+        <li><b>Submit</b> your quantity + shipping details</li>
+        <li><b>We confirm</b> totals and payment window (spot moves)</li>
+        <li><b>Payment clears</b> → we ship + send tracking</li>
+      </ol>
+
+      <div class="notice small">
+        <b>Heads up:</b> Because metals pricing moves, confirmed totals may require payment within the window stated in confirmation
+        (commonly 12–24 hours depending on order size).
+      </div>
+
+      <hr />
+
+      <form id="orderForm">
+        <div class="row">
+          <div>
+            <label>Full name</label>
+            <input class="input" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input class="input" type="email" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label>Product</label>
+            <select class="input" required>
+              <option value="">Select…</option>
+              <option>Morgan Silver Dollar (BU, Our Choice)</option>
+              <option>Peace Silver Dollar (BU, Our Choice)</option>
+            </select>
+          </div>
+          <div>
+            <label>Quantity</label>
+            <input class="input" type="number" min="1" value="1" required />
+          </div>
+        </div>
+
+        <label>Shipping address</label>
+        <textarea class="input" rows="4" required></textarea>
+
+        <label>Order notes (optional)</label>
+        <textarea class="input" rows="3" placeholder="Any preferences, questions, or special requests"></textarea>
+
+        <label style="display:flex;gap:10px;align-items:center;margin-top:12px;">
+          <input id="agree" type="checkbox" />
+          <span class="small">I agree to the <a href="/pages/terms.html"><u>Terms</u></a> (required)</span>
+        </label>
+
+        <div class="btnrow" style="margin-top:12px;">
+          <button class="btn primary" type="submit">Submit reservation (demo)</button>
+          <a class="btn" href="/pages/shop.html">Back to shop</a>
+        </div>
+      </form>
+
+      <div id="orderMsg" class="small" style="margin-top:12px;"></div>
+
+      <hr />
+      <div class="notice small">
+        <b>Next step:</b> We’ll wire this to email (SES) or a secure form provider so submissions actually deliver.
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/order.js"></script>
+</body>
+</html>
